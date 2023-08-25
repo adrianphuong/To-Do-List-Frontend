@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,6 +13,89 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+h1 img {
+  display: block;
+  width: 150px;
+  height:auto;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 400px;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+.add {
+  background-color: #F8F8F6;
+  border-radius: 10px;
+  color: #000;
+  box-shadow: 0px 0px 10px #E7D8D7;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.add:hover {
+ color:#b06fb0;
+ transform: translateY(-5px);
+}
+
+/* Adjustments for ToDo items */
+.list {
+  margin-top: 1rem;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #F8F8F6;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  color:#000;
+  box-shadow: 0px 0px 10px #E7D8D7;
+}
+
+
+.icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.icon:hover {
+  color: #b06fb0;
+  transform: translateY(-5px);
+}
+
+
+
+
